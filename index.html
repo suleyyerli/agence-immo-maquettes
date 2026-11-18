@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Maquettes du site | [Nom de l'agence]</title>
+  <meta name="description" content="Trois propositions de site pour [Nom de l'agence] : Classique, Moderne et Urbain, avec un espace agence pour gérer les biens soi-même.">
+  <meta name="robots" content="noindex">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="fr_FR">
+  <meta property="og:title" content="Trois propositions pour le site de [Nom de l'agence]">
+  <meta property="og:description" content="Classique, Moderne ou Urbain : les mêmes pages, les mêmes biens, trois personnalités. Et un espace agence pour tout gérer soi-même.">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1600210491892-03d54c0aaf87?auto=format&fit=crop&q=75&w=1200&h=630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="theme-color" content="#f7f6f2">
+  <link rel="icon" href="admin/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600&display=swap">
+  <link rel="stylesheet" href="presentation.css">
+</head>
+<body>
+  <header class="entete">
+    <div class="conteneur entete__inner">
+      <p class="entete__projet">Maquettes · [Nom de l'agence]</p>
+      <nav aria-label="Aller à">
+        <ul class="entete__nav">
+          <li><a href="#classique">Classique</a></li>
+          <li><a href="#moderne">Moderne</a></li>
+          <li><a href="#urbain">Urbain</a></li>
+          <li><a href="#admin">Espace agence</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="intro conteneur">
+      <h1 class="intro__titre">Trois propositions pour le site de <em>votre agence</em>.</h1>
+      <div class="intro__texte">
+        <p>Bonjour [Prénom],</p>
+        <p>Voici trois façons de présenter [Nom de l'agence]. Les trois sites ont les mêmes pages et les mêmes biens : seul le style change. Prenez le temps de les parcourir, sur ordinateur et sur votre téléphone, et dites-moi celui dans lequel vous vous reconnaissez.</p>
+        <p>Essayez aussi l’espace agence : c’est là que vous ajouterez vos biens vous-même, sans passer par moi.</p>
+      </div>
+      <ul class="intro__vignettes" aria-label="Les trois styles">
+        <li><a href="#classique"><img src="apercus/classique.webp" alt="" width="1440" height="900"><span>Classique</span></a></li>
+        <li><a href="#moderne"><img src="apercus/moderne.webp" alt="" width="1440" height="900"><span>Moderne</span></a></li>
+        <li><a href="#urbain"><img src="apercus/urbain.webp" alt="" width="1440" height="900"><span>Urbain</span></a></li>
+      </ul>
+    </section>
+
+    <section class="style style--classique" id="classique" aria-labelledby="t-classique">
+      <div class="conteneur style__grille">
+        <div class="style__visuel">
+          <a class="ecran" href="site-classique/index.html" aria-label="Ouvrir le site Classique">
+            <span class="ecran__barre" aria-hidden="true"><span></span><span></span><span></span></span>
+            <img src="apercus/classique.webp" alt="Page d’accueil du style Classique" width="1440" height="900" loading="lazy">
+          </a>
+          <img class="telephone" src="apercus/classique-mobile.webp" alt="Le style Classique sur téléphone" width="560" height="1211" loading="lazy">
+        </div>
+        <div class="style__texte">
+          <p class="style__nom">Classique</p>
+          <h2 id="t-classique">Élégant et rassurant</h2>
+          <p>Fond crème, touches de doré, de grands titres à empattement. L’esprit des belles agences de centre-ville : on prend le temps, on inspire confiance.</p>
+          <ul class="style__points">
+            <li>Sur l’accueil, une grande annonce et deux plus petites</li>
+            <li>Votre mot de bienvenue, avec votre photo et une signature manuscrite</li>
+            <li>Parfait pour les maisons de famille et une clientèle qui veut être rassurée</li>
+          </ul>
+          <p class="style__actions">
+            <a class="bouton" href="site-classique/index.html">Visiter le site Classique</a>
+            <a class="lien" href="site-classique/bien.html?id=maison-70-jardin">Une fiche bien</a>
+            <a class="lien" href="site-classique/vendre.html">La page Vendre</a>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="style style--moderne" id="moderne" aria-labelledby="t-moderne">
+      <div class="conteneur style__grille style__grille--inverse">
+        <div class="style__visuel">
+          <a class="ecran" href="site-moderne/index.html" aria-label="Ouvrir le site Moderne">
+            <span class="ecran__barre" aria-hidden="true"><span></span><span></span><span></span></span>
+            <img src="apercus/moderne.webp" alt="Page d’accueil du style Moderne" width="1440" height="900" loading="lazy">
+          </a>
+          <img class="telephone" src="apercus/moderne-mobile.webp" alt="Le style Moderne sur téléphone" width="560" height="1211" loading="lazy">
+        </div>
+        <div class="style__texte">
+          <p class="style__nom">Moderne</p>
+          <h2 id="t-moderne">Clair et pratique</h2>
+          <p>Blanc, vert profond, coins arrondis. Une grande barre de recherche dès l’arrivée, comme sur les portails que vos acheteurs utilisent déjà.</p>
+          <ul class="style__points">
+            <li>Recherche Acheter / Louer en trois champs, filtres en colonne</li>
+            <li>Un simulateur d’honoraires sur la page Vendre</li>
+            <li>Parfait pour une clientèle pressée qui cherche sur son téléphone</li>
+          </ul>
+          <p class="style__actions">
+            <a class="bouton" href="site-moderne/index.html">Visiter le site Moderne</a>
+            <a class="lien" href="site-moderne/biens.html">La recherche</a>
+            <a class="lien" href="site-moderne/vendre.html#simulateur">Le simulateur</a>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="style style--urbain" id="urbain" aria-labelledby="t-urbain">
+      <div class="conteneur style__grille">
+        <div class="style__visuel">
+          <a class="ecran" href="site-urbain/index.html" aria-label="Ouvrir le site Urbain">
+            <span class="ecran__barre" aria-hidden="true"><span></span><span></span><span></span></span>
+            <img src="apercus/urbain.webp" alt="Page d’accueil du style Urbain" width="1440" height="900" loading="lazy">
+          </a>
+          <img class="telephone" src="apercus/urbain-mobile.webp" alt="Le style Urbain sur téléphone" width="560" height="1211" loading="lazy">
+        </div>
+        <div class="style__texte">
+          <p class="style__nom">Urbain</p>
+          <h2 id="t-urbain">Jeune et affirmé</h2>
+          <p>Fond sombre, très grands titres, touches d’orange. Une agence qui ose, et qu’on ne confond pas avec les réseaux.</p>
+          <ul class="style__points">
+            <li>Les biens présentés en grandes lignes, comme un index</li>
+            <li>Un ton direct, des tarifs affichés « en vrai »</li>
+            <li>Parfait pour les appartements, les lofts et une clientèle de trentenaires</li>
+          </ul>
+          <p class="style__actions">
+            <a class="bouton" href="site-urbain/index.html">Visiter le site Urbain</a>
+            <a class="lien" href="site-urbain/bien.html?id=loft-imprimerie">Une fiche bien</a>
+            <a class="lien" href="site-urbain/agence.html">La page L’agence</a>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="admin" id="admin" aria-labelledby="t-admin">
+      <div class="conteneur admin__grille">
+        <div class="admin__texte">
+          <h2 id="t-admin">Votre espace agence</h2>
+          <p>Ajouter un bien depuis votre téléphone pendant une visite, changer un prix, marquer une maison vendue, rappeler quelqu’un qui a demandé une visite. Vous le faites vous-même, en deux minutes.</p>
+          <p class="admin__note">Il fonctionne avec les trois styles. Pour la démo, n’importe quel e-mail et mot de passe ouvrent l’espace.</p>
+          <ul class="essais">
+            <li>Ajoutez un bien avec une photo, puis ouvrez « Nos biens » sur l’un des trois sites : il y est déjà.</li>
+            <li>Remplissez le formulaire « Demander une visite » d’une fiche : la demande arrive dans « Demandes ».</li>
+            <li>Passez un bien en « Vendu » depuis la liste, en un clic.</li>
+            <li>Tout remettre comme au début : le bouton « Réinitialiser la démo ».</li>
+          </ul>
+          <p class="style__actions">
+            <a class="bouton bouton--clair" href="admin/connexion.html">Ouvrir l’espace agence</a>
+          </p>
+          <p class="admin__note">Démo : ce que vous faites reste enregistré sur votre appareil uniquement.</p>
+        </div>
+        <div class="admin__visuel">
+          <a class="ecran ecran--sombre" href="admin/connexion.html" aria-label="Ouvrir l’espace agence">
+            <span class="ecran__barre" aria-hidden="true"><span></span><span></span><span></span></span>
+            <img src="apercus/admin.webp" alt="Tableau de bord de l’espace agence" width="1440" height="900" loading="lazy">
+          </a>
+          <img class="telephone" src="apercus/admin-mobile.webp" alt="Modifier un bien depuis son téléphone" width="560" height="1211" loading="lazy">
+        </div>
+      </div>
+    </section>
+
+    <section class="suite conteneur" aria-labelledby="t-suite">
+      <h2 id="t-suite">Et ensuite&nbsp;?</h2>
+      <dl class="suite__liste">
+        <div>
+          <dt>Vous choisissez</dt>
+          <dd>Un des trois styles, ou un mélange : la recherche du Moderne avec les couleurs du Classique, par exemple.</dd>
+        </div>
+        <div>
+          <dt>Vous m’envoyez vos informations</dt>
+          <dd>Logo, photos, coordonnées, horaires, honoraires. Tout ce qui est entre crochets [ ] sera remplacé par vos textes.</dd>
+        </div>
+        <div>
+          <dt>Je mets le site en ligne</dt>
+          <dd>Sur votre nom de domaine, avec le référencement de base, et je vous montre l’espace agence en vrai.</dd>
+        </div>
+      </dl>
+    </section>
+  </main>
+
+  <footer class="pied">
+    <div class="conteneur pied__inner">
+      <p>Maquettes réalisées par [Votre nom] · <a href="mailto:[Votre e-mail]">[Votre e-mail]</a> · [Votre téléphone]</p>
+      <p>Photos d’illustration : Unsplash</p>
+    </div>
+  </footer>
+</body>
+</html>

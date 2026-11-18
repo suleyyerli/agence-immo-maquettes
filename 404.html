@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Page introuvable</title>
+  <meta name="robots" content="noindex">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Serif&family=Inter:wght@400;500&display=swap">
+  <script>
+    // GitHub Pages ne sert que cette 404 : on renvoie vers celle du style visité.
+    (function () {
+      var m = location.pathname.match(/^(.*?\/)(site-classique|site-moderne|site-urbain)\//);
+      if (m && !/\/404\.html$/.test(location.pathname)) location.replace(m[1] + m[2] + '/404.html');
+    })();
+  </script>
+  <style>
+    body { margin: 0; min-height: 100vh; display: grid; place-items: center; background: #f7f6f2; color: #55524a; font-family: Inter, system-ui, sans-serif; text-align: center; padding: 1.5rem; }
+    h1 { margin: 0 0 1rem; color: #1b1a17; font: 400 clamp(2.4rem, 7vw, 4rem)/1 'Instrument Serif', Georgia, serif; }
+    a { color: #1b1a17; }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Cette page n’existe pas.</h1>
+    <p><a id="retour" href="/">Revenir aux maquettes</a></p>
+  </main>
+  <script>
+    // Lien de retour vers la racine du projet, quel que soit le dossier demandé
+    var racine = location.pathname.split('/').filter(Boolean)[0];
+    document.getElementById('retour').href = location.hostname.endsWith('github.io') && racine ? '/' + racine + '/' : '/';
+  </script>
+</body>
+</html>
