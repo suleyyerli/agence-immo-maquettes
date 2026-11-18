@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Barème des honoraires | [Nom de l'agence]</title>
+  <meta name="description" content="Honoraires de transaction et de location de [Nom de l'agence], agence immobilière à [Votre ville]. Tarifs TTC, avec des exemples chiffrés.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="fr_FR">
+  <meta property="og:site_name" content="[Nom de l'agence]">
+  <meta property="og:title" content="Barème des honoraires | [Nom de l'agence]">
+  <meta property="og:description" content="Honoraires de transaction et de location de [Nom de l'agence], agence immobilière à [Votre ville]. Tarifs TTC, avec des exemples chiffrés.">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1505873242700-f289a29e1e0f?auto=format&fit=crop&q=75&w=1200&h=630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="theme-color" content="#121211">
+  <meta name="color-scheme" content="dark">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://images.unsplash.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:ital,wdth,wght@0,62..125,400..900;1,62..125,400&family=IBM+Plex+Mono:wght@400;500&family=Mrs+Saint+Delafield&display=swap">
+  <link rel="stylesheet" href="css/style.css">
+  <script>document.documentElement.classList.add('js');</script>
+</head>
+<body class="page-texte page-honoraires">
+  <a class="lien-evitement" href="#contenu">Aller au contenu</a>
+
+  <header class="site-header" data-header>
+    <div class="site-header__inner">
+      <a class="logo" href="index.html" aria-label="[Nom de l'agence], retour à l’accueil">[Nom de l'agence]</a>
+
+      <nav class="nav" id="menu-principal" aria-label="Navigation principale">
+        <ul class="nav__liste">
+          <li><a href="biens.html">Biens</a></li>
+          <li><a href="vendre.html">Vendre</a></li>
+          <li><a href="location-gestion.html">Louer &amp; gérer</a></li>
+          <li><a href="agence.html">L’agence</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="nav__mobile-pied">
+          <a class="nav__tel" href="tel:[Téléphone]">[Téléphone]</a>
+          <p>[Adresse], [Votre ville]<br>[horaires]</p>
+        </div>
+      </nav>
+
+      <a class="site-header__tel" href="tel:[Téléphone]">[Téléphone]</a>
+      <a class="bouton bouton--orange site-header__cta" href="vendre.html#estimation">Estimer</a>
+      <button class="burger" type="button" data-menu-bouton aria-controls="menu-principal" aria-expanded="false" aria-label="Ouvrir le menu">
+        <span class="burger__texte" aria-hidden="true">Menu</span>
+      </button>
+    </div>
+  </header>
+
+  <main id="contenu">
+    <section class="intro conteneur conteneur--texte">
+      <h1 class="intro__titre">Barème des honoraires</h1>
+      <p class="intro__chapo">On affiche nos tarifs. Tous. Vous savez combien ça coûte avant de signer quoi que ce soit, et vous ne payez qu’à la vente.</p>
+    </section>
+
+    <div class="conteneur conteneur--texte texte">
+      <h2>Vente</h2>
+      <p>Honoraires à la charge du vendeur, calculés sur le prix de vente net vendeur. Taux TTC, TVA de 20 % incluse.</p>
+      <table class="tableau">
+        <caption class="sr-only">Honoraires de transaction</caption>
+        <thead><tr><th scope="col">Prix de vente</th><th scope="col">Honoraires TTC</th></tr></thead>
+        <tbody data-honoraires="vente">
+          <tr><th scope="row">Jusqu’à 80 000 €</th><td>Forfait de 5 000 €</td></tr>
+          <tr><th scope="row">De 80 001 € à 150 000 €</th><td>6 % du prix de vente</td></tr>
+          <tr><th scope="row">De 150 001 € à 250 000 €</th><td>5 % du prix de vente</td></tr>
+          <tr><th scope="row">De 250 001 € à 400 000 €</th><td>4,5 % du prix de vente</td></tr>
+          <tr><th scope="row">Au-delà de 400 000 €</th><td>4 % du prix de vente</td></tr>
+        </tbody>
+      </table>
+
+      <div class="exemple">
+        <p class="exemple__titre">Un exemple</p>
+        <p>Pour une maison vendue 289 000 €, les honoraires sont de 13 005 € TTC (4,5 %). Le prix affiché sur l’annonce est le prix que paie l’acheteur, honoraires compris, hors frais de notaire.</p>
+      </div>
+
+      <h2>Location d’habitation</h2>
+      <p>Montants plafonnés par la loi du 6 juillet 1989 (décret du 1<sup>er</sup> août 2014). La part du locataire ne peut jamais dépasser celle du propriétaire.</p>
+      <table class="tableau">
+        <caption class="sr-only">Honoraires de location et de gestion</caption>
+        <thead><tr><th scope="col">Prestation</th><th scope="col">Honoraires TTC</th></tr></thead>
+        <tbody data-honoraires="location">
+          <tr><th scope="row">Visite, constitution du dossier et rédaction du bail</th><td>8 € par m² (locataire) et 8 € par m² (propriétaire)</td></tr>
+          <tr><th scope="row">État des lieux d’entrée</th><td>3 € par m² (locataire) et 3 € par m² (propriétaire)</td></tr>
+          <tr><th scope="row">Gestion locative</th><td>6 % des loyers encaissés</td></tr>
+          <tr><th scope="row">Garantie des loyers impayés (option)</th><td>2,5 % des loyers encaissés</td></tr>
+        </tbody>
+      </table>
+
+      <div class="exemple">
+        <p class="exemple__titre">Un exemple</p>
+        <p>Pour un T2 de 46 m² loué 690 € par mois : le locataire paie 368 € pour la visite, le dossier et le bail, et 138 € pour l’état des lieux. Le propriétaire paie la même chose. Si vous confiez ensuite la gestion, comptez 41,40 € par mois.</p>
+      </div>
+
+      <h2>Ce qui est toujours offert</h2>
+      <ul>
+        <li>L’estimation de votre bien et l’avis de valeur écrit.</li>
+        <li>Les photos, la rédaction de l’annonce et sa diffusion.</li>
+        <li>L’accompagnement jusqu’à la signature chez le notaire.</li>
+      </ul>
+      <p class="texte__note">Barème en vigueur au <span data-annee>2026</span>. Montants donnés à titre d’exemple, à adapter par l’agence. Ces honoraires peuvent être négociés au moment de la signature du mandat, jamais après.</p>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="site-footer__haut">
+      <div class="site-footer__bloc">
+        <p class="site-footer__titre">L’agence</p>
+        <p>[Adresse]<br>[Code postal] [Votre ville]</p>
+        <p>Du mardi au samedi<br>[horaires]</p>
+      </div>
+      <div class="site-footer__bloc">
+        <p class="site-footer__titre">Nous joindre</p>
+        <p><a class="site-footer__tel" href="tel:[Téléphone]">[Téléphone]</a><br><a href="mailto:[e-mail]">[e-mail]</a></p>
+      </div>
+      <nav class="site-footer__bloc" aria-label="Plan du site">
+        <p class="site-footer__titre">Plan du site</p>
+        <ul>
+          <li><a href="biens.html">À vendre</a></li>
+          <li><a href="biens.html?transaction=location">À louer</a></li>
+          <li><a href="vendre.html#estimation">Estimation</a></li>
+          <li><a href="location-gestion.html">Gestion locative</a></li>
+          <li><a href="agence.html">L’agence</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <nav class="site-footer__bloc" aria-label="Informations légales">
+        <p class="site-footer__titre">Infos</p>
+        <ul>
+          <li><a href="honoraires.html">Honoraires</a></li>
+          <li><a href="mentions-legales.html">Mentions légales</a></li>
+          <li><a href="confidentialite.html">Confidentialité</a></li>
+          <li><a class="lien-discret" href="../admin/connexion.html">Espace agence</a></li>
+        </ul>
+      </nav>
+    </div>
+    <p class="site-footer__marque" aria-hidden="true">[Nom de l'agence]</p>
+    <p class="site-footer__legal">© <span data-annee>2026</span> [Nom de l'agence] · Carte pro n° [n° carte pro], CCI de [ville] · Garantie financière [organisme]</p>
+  </footer>
+
+  <a class="appel-mobile" href="tel:[Téléphone]">Appeler</a>
+
+  <script src="../shared/data.js" defer></script>
+  <script src="../shared/store.js" defer></script>
+  <script src="../shared/ui.js" defer></script>
+  <script src="../shared/biens.js" defer></script>
+  <script src="js/main.js" defer></script>
+</body>
+</html>

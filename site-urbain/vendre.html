@@ -1,0 +1,233 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Vendre son appartement ou sa maison à [Votre ville] | [Nom de l'agence]</title>
+  <meta name="description" content="Estimation gratuite sous 48 h, plan de vente en cinq étapes, un compte rendu après chaque visite. Honoraires affichés, payés à la vente.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="fr_FR">
+  <meta property="og:site_name" content="[Nom de l'agence]">
+  <meta property="og:title" content="Vendre son appartement ou sa maison à [Votre ville] | [Nom de l'agence]">
+  <meta property="og:description" content="Estimation gratuite sous 48 h, plan de vente en cinq étapes, un compte rendu après chaque visite. Honoraires affichés, payés à la vente.">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1505873242700-f289a29e1e0f?auto=format&fit=crop&q=75&w=1200&h=630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="theme-color" content="#121211">
+  <meta name="color-scheme" content="dark">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://images.unsplash.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:ital,wdth,wght@0,62..125,400..900;1,62..125,400&family=IBM+Plex+Mono:wght@400;500&family=Mrs+Saint+Delafield&display=swap">
+  <link rel="stylesheet" href="css/style.css">
+  <script>document.documentElement.classList.add('js');</script>
+</head>
+<body class="page-vendre">
+  <a class="lien-evitement" href="#contenu">Aller au contenu</a>
+
+  <header class="site-header" data-header>
+    <div class="site-header__inner">
+      <a class="logo" href="index.html" aria-label="[Nom de l'agence], retour à l’accueil">[Nom de l'agence]</a>
+
+      <nav class="nav" id="menu-principal" aria-label="Navigation principale">
+        <ul class="nav__liste">
+          <li><a href="biens.html">Biens</a></li>
+          <li><a href="vendre.html" aria-current="page">Vendre</a></li>
+          <li><a href="location-gestion.html">Louer &amp; gérer</a></li>
+          <li><a href="agence.html">L’agence</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="nav__mobile-pied">
+          <a class="nav__tel" href="tel:[Téléphone]">[Téléphone]</a>
+          <p>[Adresse], [Votre ville]<br>[horaires]</p>
+        </div>
+      </nav>
+
+      <a class="site-header__tel" href="tel:[Téléphone]">[Téléphone]</a>
+      <a class="bouton bouton--orange site-header__cta" href="vendre.html#estimation">Estimer</a>
+      <button class="burger" type="button" data-menu-bouton aria-controls="menu-principal" aria-expanded="false" aria-label="Ouvrir le menu">
+        <span class="burger__texte" aria-hidden="true">Menu</span>
+      </button>
+    </div>
+  </header>
+
+  <main id="contenu">
+    <section class="intro conteneur">
+      <h1 class="intro__titre">Vendre. Sans y passer vos soirées.</h1>
+      <p class="intro__chapo">Vous gardez la main sur les décisions, je m’occupe de tout le reste. Voici le plan, du premier café à la remise des clés.</p>
+    </section>
+
+    <section class="section section--court" aria-labelledby="t-plan">
+      <div class="conteneur">
+        <h2 id="t-plan" class="sr-only">Le plan de vente</h2>
+        <ol class="plan">
+          <li class="plan__etape" data-reveler>
+            <p class="plan__quand">J+2</p>
+            <h3 class="plan__titre">L’estimation</h3>
+            <p>Je visite avec vous, je mesure, je pose les questions qui fâchent (travaux, voisinage, factures). Vous recevez un avis de valeur écrit avec les ventes comparables.</p>
+          </li>
+          <li class="plan__etape" data-reveler>
+            <p class="plan__quand">S1 → S2</p>
+            <h3 class="plan__titre">La mise en vente</h3>
+            <p>Diagnostics, photos un jour de soleil, annonce écrite avec vous. Diffusion sur le site, Leboncoin, SeLoger, Bien’ici et auprès des acheteurs déjà en attente.</p>
+          </li>
+          <li class="plan__etape" data-reveler>
+            <p class="plan__quand">M1 → M2</p>
+            <h3 class="plan__titre">Les visites</h3>
+            <p>Seulement des acheteurs dont j’ai vérifié le financement. Un message après chaque visite : ce qui a plu, ce qui a coincé.</p>
+          </li>
+          <li class="plan__etape" data-reveler>
+            <p class="plan__quand">L’offre</p>
+            <h3 class="plan__titre">Le compromis</h3>
+            <p>Chaque offre par écrit, avec mon avis. Une fois d’accord, je prépare le compromis avec votre notaire.</p>
+          </li>
+          <li class="plan__etape" data-reveler>
+            <p class="plan__quand">+3 mois</p>
+            <h3 class="plan__titre">Les clés</h3>
+            <p>Je suis le prêt de l’acheteur et je relance le notaire si ça traîne. Mes honoraires ne sont dus qu’à la signature.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="section section--clair" id="estimation" aria-labelledby="t-form-estimation">
+      <div class="conteneur formulaire-section">
+        <div class="formulaire-section__texte">
+          <h2 id="t-form-estimation">Demandez votre estimation</h2>
+          <p>Gratuite. Sans engagement. Même si vous vendez dans deux ans.</p>
+          <p class="formulaire-section__tel">Pressé ? <a href="tel:[Téléphone]">[Téléphone]</a></p>
+        </div>
+        <div>
+          <form class="formulaire" data-form="estimation">
+            <div class="champs">
+              <div class="champ champ--large">
+                <label for="e-adresse">Adresse du bien</label>
+                <input id="e-adresse" name="adresse" type="text" autocomplete="street-address" required>
+              </div>
+              <div class="champ">
+                <label for="e-type">Type</label>
+                <select id="e-type" name="typeBien" required>
+                  <option value="">Choisir</option>
+                  <option>Appartement</option>
+                  <option>Maison</option>
+                  <option>Loft</option>
+                  <option>Terrain</option>
+                  <option>Immeuble</option>
+                </select>
+              </div>
+              <div class="champ">
+                <label for="e-surface">Surface (m²)</label>
+                <input id="e-surface" name="surface" type="number" min="5" inputmode="numeric">
+              </div>
+              <div class="champ">
+                <label for="e-pieces">Pièces</label>
+                <input id="e-pieces" name="pieces" type="number" min="1" inputmode="numeric">
+              </div>
+              <div class="champ">
+                <label for="e-delai">Vous vendez…</label>
+                <select id="e-delai" name="delai">
+                  <option>Je me renseigne</option>
+                  <option>Dans les 3 mois</option>
+                  <option>Dans l’année</option>
+                </select>
+              </div>
+              <div class="champ">
+                <label for="e-nom">Nom et prénom</label>
+                <input id="e-nom" name="nom" type="text" autocomplete="name" required>
+              </div>
+              <div class="champ">
+                <label for="e-tel">Téléphone</label>
+                <input id="e-tel" name="tel" type="tel" autocomplete="tel" required>
+              </div>
+              <div class="champ champ--large">
+                <label for="e-email">E-mail</label>
+                <input id="e-email" name="email" type="email" autocomplete="email" required>
+              </div>
+              <div class="champ champ--large">
+                <label for="e-message">Un détail à savoir ? <span class="champ__option">(facultatif)</span></label>
+                <textarea id="e-message" name="message" rows="3"></textarea>
+              </div>
+            </div>
+            <div class="consentement">
+            <input type="checkbox" id="estimation-rgpd" name="rgpd" required>
+            <label for="estimation-rgpd">J’accepte que ces informations servent uniquement à traiter ma demande. Elles ne sont ni revendues ni transmises. <a href="confidentialite.html">Politique de confidentialité</a></label>
+          </div>
+            <button class="bouton bouton--orange" type="submit">Envoyer ma demande</button>
+          </form>
+          <div class="form-merci" data-form-merci hidden>
+            <p class="form-merci__titre">C’est noté, <span data-merci-prenom></span>.</p>
+            <p>Je vous rappelle sous 48 heures pour caler le rendez-vous.</p>
+            <button class="lien-fleche" type="button" data-form-recommencer>Autre demande</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="t-faq">
+      <div class="conteneur conteneur--texte">
+        <h2 id="t-faq">Les vraies questions</h2>
+        <details class="question">
+          <summary>C’est vraiment gratuit ?</summary>
+          <p>Oui. L’estimation ne vous engage à rien, même pas à vendre avec moi.</p>
+        </details>
+        <details class="question">
+          <summary>Exclusif ou pas ?</summary>
+          <p>Vous choisissez. En exclusif, je m’engage sur un plan précis et vous n’avez qu’un interlocuteur. En mandat simple, vous restez libre de passer par d’autres agences.</p>
+        </details>
+        <details class="question">
+          <summary>Et si ça ne se vend pas ?</summary>
+          <p>Vous ne payez rien. Tous les mois, on fait le point avec les chiffres : nombre de contacts, de visites, retours des acheteurs. Et on décide ensemble.</p>
+        </details>
+        <details class="question">
+          <summary>Combien ça coûte ?</summary>
+          <p>Tout est sur la page <a href="honoraires.html">honoraires</a>. Par exemple, 4,5 % pour un bien vendu 300 000 €.</p>
+        </details>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="site-footer__haut">
+      <div class="site-footer__bloc">
+        <p class="site-footer__titre">L’agence</p>
+        <p>[Adresse]<br>[Code postal] [Votre ville]</p>
+        <p>Du mardi au samedi<br>[horaires]</p>
+      </div>
+      <div class="site-footer__bloc">
+        <p class="site-footer__titre">Nous joindre</p>
+        <p><a class="site-footer__tel" href="tel:[Téléphone]">[Téléphone]</a><br><a href="mailto:[e-mail]">[e-mail]</a></p>
+      </div>
+      <nav class="site-footer__bloc" aria-label="Plan du site">
+        <p class="site-footer__titre">Plan du site</p>
+        <ul>
+          <li><a href="biens.html">À vendre</a></li>
+          <li><a href="biens.html?transaction=location">À louer</a></li>
+          <li><a href="vendre.html#estimation">Estimation</a></li>
+          <li><a href="location-gestion.html">Gestion locative</a></li>
+          <li><a href="agence.html">L’agence</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <nav class="site-footer__bloc" aria-label="Informations légales">
+        <p class="site-footer__titre">Infos</p>
+        <ul>
+          <li><a href="honoraires.html">Honoraires</a></li>
+          <li><a href="mentions-legales.html">Mentions légales</a></li>
+          <li><a href="confidentialite.html">Confidentialité</a></li>
+          <li><a class="lien-discret" href="../admin/connexion.html">Espace agence</a></li>
+        </ul>
+      </nav>
+    </div>
+    <p class="site-footer__marque" aria-hidden="true">[Nom de l'agence]</p>
+    <p class="site-footer__legal">© <span data-annee>2026</span> [Nom de l'agence] · Carte pro n° [n° carte pro], CCI de [ville] · Garantie financière [organisme]</p>
+  </footer>
+
+  <a class="appel-mobile" href="tel:[Téléphone]">Appeler</a>
+
+  <script src="../shared/data.js" defer></script>
+  <script src="../shared/store.js" defer></script>
+  <script src="../shared/ui.js" defer></script>
+  <script src="../shared/biens.js" defer></script>
+  <script src="js/main.js" defer></script>
+</body>
+</html>

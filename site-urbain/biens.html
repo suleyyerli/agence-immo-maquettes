@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Biens à vendre et à louer à [Votre ville] | [Nom de l'agence]</title>
+  <meta name="description" content="Maisons, appartements, lofts et terrains à vendre ou à louer à [Votre ville] et alentour. Filtrez par budget, type de bien et nombre de pièces.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="fr_FR">
+  <meta property="og:site_name" content="[Nom de l'agence]">
+  <meta property="og:title" content="Biens à vendre et à louer à [Votre ville] | [Nom de l'agence]">
+  <meta property="og:description" content="Maisons, appartements, lofts et terrains à vendre ou à louer à [Votre ville] et alentour. Filtrez par budget, type de bien et nombre de pièces.">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1505873242700-f289a29e1e0f?auto=format&fit=crop&q=75&w=1200&h=630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="theme-color" content="#121211">
+  <meta name="color-scheme" content="dark">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://images.unsplash.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:ital,wdth,wght@0,62..125,400..900;1,62..125,400&family=IBM+Plex+Mono:wght@400;500&family=Mrs+Saint+Delafield&display=swap">
+  <link rel="stylesheet" href="css/style.css">
+  <script>document.documentElement.classList.add('js');</script>
+</head>
+<body class="page-biens">
+  <a class="lien-evitement" href="#contenu">Aller au contenu</a>
+
+  <header class="site-header" data-header>
+    <div class="site-header__inner">
+      <a class="logo" href="index.html" aria-label="[Nom de l'agence], retour à l’accueil">[Nom de l'agence]</a>
+
+      <nav class="nav" id="menu-principal" aria-label="Navigation principale">
+        <ul class="nav__liste">
+          <li><a href="biens.html" aria-current="page">Biens</a></li>
+          <li><a href="vendre.html">Vendre</a></li>
+          <li><a href="location-gestion.html">Louer &amp; gérer</a></li>
+          <li><a href="agence.html">L’agence</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="nav__mobile-pied">
+          <a class="nav__tel" href="tel:[Téléphone]">[Téléphone]</a>
+          <p>[Adresse], [Votre ville]<br>[horaires]</p>
+        </div>
+      </nav>
+
+      <a class="site-header__tel" href="tel:[Téléphone]">[Téléphone]</a>
+      <a class="bouton bouton--orange site-header__cta" href="vendre.html#estimation">Estimer</a>
+      <button class="burger" type="button" data-menu-bouton aria-controls="menu-principal" aria-expanded="false" aria-label="Ouvrir le menu">
+        <span class="burger__texte" aria-hidden="true">Menu</span>
+      </button>
+    </div>
+  </header>
+
+  <main id="contenu">
+    <section class="intro conteneur">
+      <h1 class="intro__titre">Tous les biens</h1>
+      <p class="intro__chapo">Appartements, maisons, lofts, terrains. On a tout visité, tout mesuré, tout photographié nous-mêmes.</p>
+    </section>
+
+    <div class="conteneur catalogue">
+      <button class="catalogue__bascule" type="button" data-filtres-bascule aria-expanded="false" aria-controls="filtres">Filtrer les biens</button>
+
+      <form class="filtres" id="filtres" data-filtres aria-label="Filtrer les biens">
+        <fieldset class="filtres__projet">
+          <legend class="sr-only">Votre projet</legend>
+          <label class="filtres__onglet"><input type="radio" name="transaction" value="vente" checked><span>Acheter <small data-compte-transaction="vente"></small></span></label>
+          <label class="filtres__onglet"><input type="radio" name="transaction" value="location"><span>Louer <small data-compte-transaction="location"></small></span></label>
+        </fieldset>
+
+        <div class="filtres__champ">
+          <label for="f-type">Type de bien</label>
+          <select id="f-type" name="type"><option value="">Tous les types</option></select>
+        </div>
+        <div class="filtres__champ">
+          <label for="f-ville">Ville</label>
+          <select id="f-ville" name="ville"><option value="">Toutes les villes</option></select>
+        </div>
+        <div class="filtres__champ">
+          <label for="f-budget">Budget maximum</label>
+          <select id="f-budget" name="budget"><option value="">Pas de maximum</option></select>
+        </div>
+
+        <fieldset class="filtres__pieces">
+          <legend>Pièces</legend>
+          <label><input type="radio" name="pieces" value="" checked><span>Toutes</span></label>
+          <label><input type="radio" name="pieces" value="1"><span>1+</span></label>
+          <label><input type="radio" name="pieces" value="2"><span>2+</span></label>
+          <label><input type="radio" name="pieces" value="3"><span>3+</span></label>
+          <label><input type="radio" name="pieces" value="4"><span>4+</span></label>
+          <label><input type="radio" name="pieces" value="5"><span>5+</span></label>
+        </fieldset>
+
+        <label class="filtres__case"><input type="checkbox" name="masquerVendus"> Masquer les biens vendus ou loués</label>
+        <button class="filtres__effacer" type="reset">Effacer les filtres</button>
+      </form>
+
+      <div class="resultats">
+        <div class="resultats__entete">
+          <p class="resultats__compte" data-resultats-compte aria-live="polite">Chargement des biens…</p>
+          <div class="resultats__tri">
+            <label for="f-tri">Trier par</label>
+            <select id="f-tri" name="tri" form="filtres">
+              <option value="">Les plus récents</option>
+              <option value="prix-asc">Prix croissant</option>
+              <option value="prix-desc">Prix décroissant</option>
+              <option value="surface-desc">Les plus grands</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="grille-biens" data-resultats data-par-page="6"></div>
+
+        <div class="resultats__vide" data-resultats-vide hidden>
+          <p>Rien pour ces critères en ce moment. Ça bouge vite : laissez-nous votre recherche et on vous appelle dès qu’un bien sort.</p>
+          <a class="bouton" href="contact.html">Laisser ma recherche</a>
+        </div>
+
+        <nav class="pagination" data-pagination aria-label="Pages de résultats"></nav>
+      </div>
+    </div>
+
+    <section class="alerte conteneur" aria-labelledby="t-alerte" data-reveler>
+      <div class="alerte__texte">
+        <h2 id="t-alerte">Pas trouvé ?</h2>
+        <p>La moitié de nos biens partent avant d’être en ligne. Dites-nous ce que vous cherchez, vous serez dans les premiers appelés.</p>
+      </div>
+      <a class="bouton" href="contact.html">Décrire ma recherche</a>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="site-footer__haut">
+      <div class="site-footer__bloc">
+        <p class="site-footer__titre">L’agence</p>
+        <p>[Adresse]<br>[Code postal] [Votre ville]</p>
+        <p>Du mardi au samedi<br>[horaires]</p>
+      </div>
+      <div class="site-footer__bloc">
+        <p class="site-footer__titre">Nous joindre</p>
+        <p><a class="site-footer__tel" href="tel:[Téléphone]">[Téléphone]</a><br><a href="mailto:[e-mail]">[e-mail]</a></p>
+      </div>
+      <nav class="site-footer__bloc" aria-label="Plan du site">
+        <p class="site-footer__titre">Plan du site</p>
+        <ul>
+          <li><a href="biens.html">À vendre</a></li>
+          <li><a href="biens.html?transaction=location">À louer</a></li>
+          <li><a href="vendre.html#estimation">Estimation</a></li>
+          <li><a href="location-gestion.html">Gestion locative</a></li>
+          <li><a href="agence.html">L’agence</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <nav class="site-footer__bloc" aria-label="Informations légales">
+        <p class="site-footer__titre">Infos</p>
+        <ul>
+          <li><a href="honoraires.html">Honoraires</a></li>
+          <li><a href="mentions-legales.html">Mentions légales</a></li>
+          <li><a href="confidentialite.html">Confidentialité</a></li>
+          <li><a class="lien-discret" href="../admin/connexion.html">Espace agence</a></li>
+        </ul>
+      </nav>
+    </div>
+    <p class="site-footer__marque" aria-hidden="true">[Nom de l'agence]</p>
+    <p class="site-footer__legal">© <span data-annee>2026</span> [Nom de l'agence] · Carte pro n° [n° carte pro], CCI de [ville] · Garantie financière [organisme]</p>
+  </footer>
+
+  <a class="appel-mobile" href="tel:[Téléphone]">Appeler</a>
+
+  <script src="../shared/data.js" defer></script>
+  <script src="../shared/store.js" defer></script>
+  <script src="../shared/ui.js" defer></script>
+  <script src="../shared/biens.js" defer></script>
+  <script src="js/main.js" defer></script>
+</body>
+</html>
