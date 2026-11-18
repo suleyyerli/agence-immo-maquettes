@@ -98,7 +98,7 @@ window.Immo = window.Immo || {};
       statut: 'en-ligne',
       visible: true,
       coupDeCoeur: true,
-      dateAjout: ilYa(6)
+      dateAjout: ilYa(11)
     },
     {
       id: 'studio-gare',
@@ -202,8 +202,7 @@ window.Immo = window.Immo || {};
         u('1494526585095-c41746248156', 'Façade de la maison en fin de journée'),
         u('1600210491892-03d54c0aaf87', 'Pièce de vie avec fenêtres cintrées'),
         u('1600047508788-786f3865b4b9', 'Séjour et escalier en bois'),
-        u('1586105251261-72a756497a11', 'Chambre au calme'),
-        u('1617850687395-620757feb1f3', 'Cour intérieure aménagée')
+        u('1586105251261-72a756497a11', 'Chambre au calme')
       ],
       statut: 'en-ligne',
       visible: true,
@@ -275,7 +274,7 @@ window.Immo = window.Immo || {};
       ],
       statut: 'en-ligne',
       visible: true,
-      dateAjout: ilYa(5)
+      dateAjout: ilYa(8)
     },
     {
       id: 'maison-contemporaine',
@@ -415,7 +414,7 @@ window.Immo = window.Immo || {};
         'Petite copropriété de 12 lots, sans travaux prévus. Garage fermé en sous-sol en option (15 000 €).',
       pointsForts: ['Terrasse', 'Ascenseur', 'Lumineux', 'Vue dégagée', 'Proche commerces'],
       photos: [
-        u('1600573472550-8090b5e0745e', 'Baie vitrée ouverte sur la terrasse'),
+        u('1617850687395-620757feb1f3', 'La terrasse de 30 m² vue d’en haut'),
         u('1616486338812-3dadae4b4ace', 'Séjour clair et chaleureux'),
         u('1615529182904-14819c35db37', 'Coin salon avec suspensions en osier'),
         u('1588854337236-6889d631faa8', 'Cuisine ouverte moderne'),

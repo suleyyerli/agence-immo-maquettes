@@ -14,7 +14,7 @@ window.Immo = window.Immo || {};
   'use strict';
 
   var store = window.Immo.store;
-  var JOURS_NOUVEAU = 15;
+  var JOURS_NOUVEAU = 7;
 
   /* ==========================================================
      Outils de formatage

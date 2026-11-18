@@ -117,7 +117,8 @@ window.Immo = window.Immo || {};
       // Pré-remplissage depuis l'URL (mini-formulaire d'estimation de l'accueil)
       params.forEach(function (valeur, cle) {
         var champ = form.elements[cle];
-        if (champ && champ.type !== 'checkbox' && champ.type !== 'hidden' && !champ.value) champ.value = valeur;
+        if (!champ || champ.type === 'checkbox' || champ.type === 'hidden') return;
+        if (champ.tagName === 'SELECT' || !champ.value) champ.value = valeur;
       });
 
       form.addEventListener('submit', function (e) {
