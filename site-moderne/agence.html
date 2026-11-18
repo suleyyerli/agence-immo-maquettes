@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>L’agence | [Nom de l'agence], immobilier à [Votre ville]</title>
+  <meta name="description" content="Une agence immobilière indépendante à [Votre ville], fondée par [Prénom]. Une seule interlocutrice, des prix justes et des nouvelles chaque semaine.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="fr_FR">
+  <meta property="og:site_name" content="[Nom de l'agence]">
+  <meta property="og:title" content="L’agence | [Nom de l'agence], immobilier à [Votre ville]">
+  <meta property="og:description" content="Une agence immobilière indépendante à [Votre ville], fondée par [Prénom]. Une seule interlocutrice, des prix justes et des nouvelles chaque semaine.">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&q=75&w=1200&h=630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="theme-color" content="#FFFFFF">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://images.unsplash.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Caveat:wght@500&display=swap">
+  <link rel="stylesheet" href="css/style.css">
+  <script>document.documentElement.classList.add('js');</script>
+</head>
+<body class="page-agence">
+  <a class="lien-evitement" href="#contenu">Aller au contenu</a>
+
+  <header class="site-header" data-header>
+    <div class="conteneur site-header__inner">
+      <a class="logo" href="index.html" aria-label="[Nom de l'agence], retour à l’accueil">
+        <span class="logo__marque" aria-hidden="true"></span>
+        <span class="logo__nom">[Nom de l'agence]</span>
+      </a>
+
+      <nav class="nav" id="menu-principal" aria-label="Navigation principale">
+        <ul class="nav__liste">
+          <li><a href="biens.html">Acheter</a></li>
+          <li><a href="biens.html?transaction=location">Louer</a></li>
+          <li><a href="vendre.html">Vendre</a></li>
+          <li><a href="location-gestion.html">Gestion locative</a></li>
+          <li><a href="agence.html" aria-current="page">L’agence</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="nav__mobile-pied">
+          <a class="bouton bouton--plein" href="vendre.html#estimation">Estimer mon bien gratuitement</a>
+          <a class="bouton bouton--clair" href="tel:[Téléphone]">Appeler l’agence</a>
+          <p>[Adresse], [Votre ville] · [horaires]</p>
+        </div>
+      </nav>
+
+      <div class="site-header__actions">
+        <a class="site-header__tel" href="tel:[Téléphone]">[Téléphone]</a>
+        <a class="bouton bouton--plein bouton--petit" href="vendre.html#estimation">Estimer mon bien</a>
+      </div>
+      <button class="burger" type="button" data-menu-bouton aria-controls="menu-principal" aria-expanded="false" aria-label="Ouvrir le menu">
+        <span class="burger__trait"></span><span class="burger__trait"></span><span class="burger__trait"></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="contenu">
+    <section class="intro intro--agence conteneur">
+      <div class="intro__texte">
+        <h1 class="intro__titre">Une agence de quartier, avec les outils d’aujourd’hui</h1>
+        <p class="intro__chapo">[Nom de l'agence] a ouvert en [année] au [Adresse]. Une seule personne pour vous suivre du début à la fin, et des annonces, des comptes rendus et des documents accessibles en ligne.</p>
+      </div>
+      <img class="intro__photo" src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=75&w=900" alt="[Prénom], fondatrice de [Nom de l'agence]" fetchpriority="high">
+    </section>
+
+    <section class="section section--gris" aria-labelledby="t-histoire">
+      <div class="conteneur histoire">
+        <h2 id="t-histoire" data-reveler>Pourquoi j’ai ouvert l’agence</h2>
+        <div class="histoire__texte" data-reveler>
+          <p>Pendant [X] ans, j’ai travaillé dans une agence de réseau à [Votre ville]. J’ai aimé ce métier dès le premier jour, mais j’avais de moins en moins de temps pour chaque client.</p>
+          <p>Avec [Nom de l'agence], j’ai voulu l’inverse : moins de biens à la fois, mieux suivis. Je connais chaque maison que je vends, j’ai parlé à chaque acheteur qui la visite, et je peux vous dire où en est votre dossier sans avoir à le chercher.</p>
+          <p class="signature" aria-hidden="true">[Prénom]</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="t-engagements">
+      <div class="conteneur">
+        <div class="entete-section" data-reveler>
+          <h2 id="t-engagements">Nos engagements, noir sur blanc</h2>
+        </div>
+        <div class="engagements">
+          <article class="engagement" data-reveler>
+            <h3>Le prix, expliqué</h3>
+            <p>Chaque estimation s’appuie sur des ventes réelles du quartier, que vous recevez avec l’avis de valeur.</p>
+          </article>
+          <article class="engagement" data-reveler>
+            <h3>Une réponse dans la journée</h3>
+            <p>Appel, e-mail ou message : vous avez une réponse le jour même, du mardi au samedi.</p>
+          </article>
+          <article class="engagement" data-reveler>
+            <h3>Un compte rendu après chaque visite</h3>
+            <p>Ce qui a plu, ce qui a freiné, et ce qu’on peut améliorer. Par SMS, e-mail ou téléphone, comme vous préférez.</p>
+          </article>
+          <article class="engagement" data-reveler>
+            <h3>Des honoraires connus d’avance</h3>
+            <p>Le barème est affiché sur le site et à l’agence. Vous ne payez qu’à la signature chez le notaire.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--gris" aria-labelledby="t-secteur">
+      <div class="conteneur secteur">
+        <div data-reveler>
+          <h2 id="t-secteur">Le secteur</h2>
+          <p>L’agence travaille à [Votre ville] et dans un rayon d’une vingtaine de kilomètres. Si votre bien est un peu plus loin, appelez quand même : on trouvera une solution.</p>
+        </div>
+        <ul class="secteur__liste" data-reveler>
+          <li>[Votre ville]</li>
+          <li>[Commune voisine]</li>
+          <li>[Commune voisine 2]</li>
+          <li>[Commune voisine 3]</li>
+          <li>[Commune voisine 4]</li>
+          <li>[Commune voisine 5]</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="t-legal">
+      <div class="conteneur conteneur--texte infos-legales" data-reveler>
+        <h2 id="t-legal">Les informations officielles</h2>
+        <p>Carte professionnelle transaction et gestion n° [n° carte pro], délivrée par la CCI de [ville]. Garantie financière : [organisme]. Assurance responsabilité civile professionnelle : [assureur]. Membre de la [fédération professionnelle].</p>
+        <a class="bouton bouton--clair" href="contact.html">Nous rencontrer</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="conteneur site-footer__haut">
+      <div class="site-footer__agence">
+        <p class="logo logo--pied"><span class="logo__marque" aria-hidden="true"></span><span class="logo__nom">[Nom de l'agence]</span></p>
+        <p>Agence immobilière indépendante à [Votre ville]. Vente, location et gestion locative.</p>
+        <p class="site-footer__contact">
+          <a href="tel:[Téléphone]">[Téléphone]</a>
+          <a href="mailto:[e-mail]">[e-mail]</a>
+        </p>
+      </div>
+      <nav class="site-footer__nav" aria-label="Plan du site">
+        <div>
+          <p class="site-footer__titre">Biens</p>
+          <ul>
+            <li><a href="biens.html">Acheter</a></li>
+            <li><a href="biens.html?transaction=location">Louer</a></li>
+            <li><a href="biens.html?type=Maison">Maisons</a></li>
+            <li><a href="biens.html?type=Appartement">Appartements</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="site-footer__titre">Propriétaires</p>
+          <ul>
+            <li><a href="vendre.html#estimation">Estimation gratuite</a></li>
+            <li><a href="vendre.html">Vendre</a></li>
+            <li><a href="location-gestion.html">Gestion locative</a></li>
+            <li><a href="honoraires.html">Honoraires</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="site-footer__titre">L’agence</p>
+          <ul>
+            <li><a href="agence.html">Qui sommes-nous</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li>[Adresse]<br>[Code postal] [Votre ville]</li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+    <div class="conteneur site-footer__bas">
+      <p>© <span data-annee>2026</span> [Nom de l'agence] · Carte professionnelle n° [n° carte pro], CCI de [ville] · Garantie financière : [organisme]</p>
+      <p>
+        <a href="mentions-legales.html">Mentions légales</a>
+        <a href="confidentialite.html">Confidentialité</a>
+        <a href="honoraires.html">Barème des honoraires</a>
+        <a class="lien-discret" href="../admin/connexion.html">Espace agence</a>
+      </p>
+    </div>
+  </footer>
+
+  <a class="appel-mobile" href="tel:[Téléphone]"><span class="appel-mobile__icone" aria-hidden="true"></span>Appeler</a>
+
+  <script src="../shared/data.js" defer></script>
+  <script src="../shared/store.js" defer></script>
+  <script src="../shared/ui.js" defer></script>
+  <script src="../shared/biens.js" defer></script>
+  <script src="js/main.js" defer></script>
+</body>
+</html>

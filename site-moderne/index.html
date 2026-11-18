@@ -1,0 +1,314 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>[Nom de l'agence] | Maisons et appartements à [Votre ville]</title>
+  <meta name="description" content="Trouvez une maison ou un appartement à acheter ou à louer à [Votre ville]. Annonces mises à jour chaque jour, estimation gratuite et gestion locative.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="fr_FR">
+  <meta property="og:site_name" content="[Nom de l'agence]">
+  <meta property="og:title" content="[Nom de l'agence] | Maisons et appartements à [Votre ville]">
+  <meta property="og:description" content="Trouvez une maison ou un appartement à acheter ou à louer à [Votre ville]. Annonces mises à jour chaque jour, estimation gratuite et gestion locative.">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&q=75&w=1200&h=630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="theme-color" content="#FFFFFF">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://images.unsplash.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Caveat:wght@500&display=swap">
+  <link rel="stylesheet" href="css/style.css">
+  <script>document.documentElement.classList.add('js');</script>
+</head>
+<body class="page-accueil">
+  <a class="lien-evitement" href="#contenu">Aller au contenu</a>
+
+  <header class="site-header" data-header>
+    <div class="conteneur site-header__inner">
+      <a class="logo" href="index.html" aria-label="[Nom de l'agence], retour à l’accueil">
+        <span class="logo__marque" aria-hidden="true"></span>
+        <span class="logo__nom">[Nom de l'agence]</span>
+      </a>
+
+      <nav class="nav" id="menu-principal" aria-label="Navigation principale">
+        <ul class="nav__liste">
+          <li><a href="biens.html">Acheter</a></li>
+          <li><a href="biens.html?transaction=location">Louer</a></li>
+          <li><a href="vendre.html">Vendre</a></li>
+          <li><a href="location-gestion.html">Gestion locative</a></li>
+          <li><a href="agence.html">L’agence</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="nav__mobile-pied">
+          <a class="bouton bouton--plein" href="vendre.html#estimation">Estimer mon bien gratuitement</a>
+          <a class="bouton bouton--clair" href="tel:[Téléphone]">Appeler l’agence</a>
+          <p>[Adresse], [Votre ville] · [horaires]</p>
+        </div>
+      </nav>
+
+      <div class="site-header__actions">
+        <a class="site-header__tel" href="tel:[Téléphone]">[Téléphone]</a>
+        <a class="bouton bouton--plein bouton--petit" href="vendre.html#estimation">Estimer mon bien</a>
+      </div>
+      <button class="burger" type="button" data-menu-bouton aria-controls="menu-principal" aria-expanded="false" aria-label="Ouvrir le menu">
+        <span class="burger__trait"></span><span class="burger__trait"></span><span class="burger__trait"></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="contenu">
+    <section class="hero">
+      <div class="conteneur">
+        <div class="hero__texte">
+          <h1 class="hero__titre">Trouvez votre prochain chez-vous à [Votre ville].</h1>
+          <p class="hero__chapo"><strong data-biens-compte="tous">10</strong> biens disponibles en ce moment, visités et photographiés par l’agence. Mis à jour chaque jour.</p>
+        </div>
+
+        <div class="hero__visuel">
+          <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&q=75&w=1600"
+               srcset="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&q=75&w=800 800w, https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&q=75&w=1400 1400w, https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&q=75&w=2000 2000w"
+               sizes="100vw" alt="Maison contemporaine et son jardin à la tombée du jour" fetchpriority="high">
+
+          <form class="recherche" action="biens.html" method="get" data-recherche role="search" aria-label="Rechercher un bien">
+            <fieldset class="recherche__projet">
+              <legend class="sr-only">Votre projet</legend>
+              <label><input type="radio" name="transaction" value="vente" checked><span>Acheter</span></label>
+              <label><input type="radio" name="transaction" value="location"><span>Louer</span></label>
+            </fieldset>
+            <div class="recherche__champs">
+              <div class="recherche__champ">
+                <label for="r-ville">Où ?</label>
+                <select id="r-ville" name="ville"><option value="">Toutes les villes</option></select>
+              </div>
+              <div class="recherche__champ">
+                <label for="r-type">Quel bien ?</label>
+                <select id="r-type" name="type"><option value="">Tous les types</option></select>
+              </div>
+              <div class="recherche__champ">
+                <label for="r-budget">Budget</label>
+                <select id="r-budget" name="budget"><option value="">Budget max</option></select>
+              </div>
+              <button class="bouton bouton--plein recherche__bouton" type="submit">Rechercher</button>
+            </div>
+          </form>
+        </div>
+
+        <ul class="raccourcis" aria-label="Recherches fréquentes">
+          <li><a href="biens.html?type=Maison">Maisons avec jardin</a></li>
+          <li><a href="biens.html?type=Appartement&amp;budget=200000">Appartements à moins de 200 000 €</a></li>
+          <li><a href="biens.html?transaction=location">Locations disponibles</a></li>
+          <li><a href="biens.html?pieces=4">4 pièces et plus</a></li>
+          <li><a href="vendre.html#estimation">Faire estimer mon bien</a></li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="t-nouveautes">
+      <div class="conteneur">
+        <div class="entete-section" data-reveler>
+          <div>
+            <h2 id="t-nouveautes">Arrivés cette semaine</h2>
+            <p>Les derniers biens confiés à l’agence. Les plus demandés partent en quelques jours.</p>
+          </div>
+          <a class="bouton bouton--clair" href="biens.html"><span>Voir les <span data-biens-compte="tous">10</span> biens</span></a>
+        </div>
+        <div class="grille-biens grille-biens--quatre" data-biens-grille data-nombre="4"></div>
+      </div>
+    </section>
+
+    <section class="section section--gris" aria-labelledby="t-services">
+      <div class="conteneur">
+        <div class="entete-section entete-section--centre" data-reveler>
+          <h2 id="t-services">Ce que l’agence fait pour vous</h2>
+        </div>
+        <div class="services" data-onglets>
+          <div class="services__onglets" role="tablist" aria-label="Nos services">
+            <button type="button" role="tab" id="o-vendre" aria-controls="p-vendre" aria-selected="true">Vous vendez</button>
+            <button type="button" role="tab" id="o-acheter" aria-controls="p-acheter" aria-selected="false" tabindex="-1">Vous achetez</button>
+            <button type="button" role="tab" id="o-louer" aria-controls="p-louer" aria-selected="false" tabindex="-1">Vous louez votre bien</button>
+          </div>
+
+          <div class="services__panneau" role="tabpanel" id="p-vendre" aria-labelledby="o-vendre">
+            <img src="https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&q=75&w=1000" alt="Séjour lumineux d’une maison mise en vente" loading="lazy">
+            <div class="services__texte">
+              <h3>Vendre au bon prix, sans y passer vos week-ends</h3>
+              <p>On estime votre bien gratuitement à partir des ventes réelles du quartier. Ensuite, on s’occupe de tout : photos, annonce, visites, négociation et compromis. Vous recevez un compte rendu après chaque visite.</p>
+              <ul class="coches">
+                <li>Avis de valeur écrit sous 48 h</li>
+                <li>Acheteurs vérifiés avant chaque visite</li>
+                <li>Honoraires payés seulement à la vente</li>
+              </ul>
+              <a class="lien-fleche" href="vendre.html">Comment se passe une vente</a>
+            </div>
+          </div>
+          <div class="services__panneau" role="tabpanel" id="p-acheter" aria-labelledby="o-acheter" hidden>
+            <img src="https://images.unsplash.com/photo-1600210491892-03d54c0aaf87?auto=format&fit=crop&q=75&w=1000" alt="Pièce de vie aux fenêtres cintrées" loading="lazy">
+            <div class="services__texte">
+              <h3>Acheter en sachant où vous mettez les pieds</h3>
+              <p>On vous dit franchement ce qu’on pense du prix, des travaux à prévoir et du quartier. On vous aide à faire une offre solide et on suit le dossier jusqu’à la remise des clés.</p>
+              <ul class="coches">
+                <li>Alerte dès qu’un bien correspond, souvent avant la mise en ligne</li>
+                <li>Visites le soir et le samedi</li>
+                <li>Mise en relation avec un courtier si besoin</li>
+              </ul>
+              <a class="lien-fleche" href="biens.html">Voir les biens à vendre</a>
+            </div>
+          </div>
+          <div class="services__panneau" role="tabpanel" id="p-louer" aria-labelledby="o-louer" hidden>
+            <img src="https://images.unsplash.com/photo-1567767292278-a4f21aa2d36e?auto=format&fit=crop&q=75&w=1000" alt="Appartement clair prêt à être loué" loading="lazy">
+            <div class="services__texte">
+              <h3>Louer sereinement, ou ne plus s’occuper de rien</h3>
+              <p>On trouve votre locataire et on vérifie son dossier. Si vous le souhaitez, on gère ensuite les loyers, les quittances, les relances et les petits travaux.</p>
+              <ul class="coches">
+                <li>Gestion complète à 6 % des loyers</li>
+                <li>Garantie des loyers impayés en option</li>
+                <li>Un relevé clair chaque mois</li>
+              </ul>
+              <a class="lien-fleche" href="location-gestion.html">La gestion locative en détail</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="t-estimation">
+      <div class="conteneur">
+        <div class="estimation" data-reveler>
+          <div class="estimation__texte">
+            <h2 id="t-estimation">Combien vaut votre bien&nbsp;?</h2>
+            <p>[Prénom] passe le voir gratuitement et vous donne un prix honnête, même si vous ne vendez pas tout de suite. Commencez par ces trois informations.</p>
+          </div>
+          <form class="estimation__form" action="vendre.html#estimation" method="get">
+            <div class="estimation__champ estimation__champ--large">
+              <label for="m-adresse">Adresse du bien</label>
+              <input id="m-adresse" name="adresse" type="text" placeholder="12 rue des Lilas, [Votre ville]" autocomplete="street-address">
+            </div>
+            <div class="estimation__champ">
+              <label for="m-type">Type</label>
+              <select id="m-type" name="typeBien">
+                <option>Maison</option>
+                <option>Appartement</option>
+                <option>Terrain</option>
+              </select>
+            </div>
+            <div class="estimation__champ">
+              <label for="m-surface">Surface (m²)</label>
+              <input id="m-surface" name="surface" type="number" min="5" inputmode="numeric" placeholder="85">
+            </div>
+            <button class="bouton bouton--blanc" type="submit">Continuer</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--serre" aria-labelledby="t-fondatrice">
+      <div class="conteneur">
+        <div class="fondatrice" data-reveler>
+          <img class="fondatrice__photo" src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=75&w=800" alt="[Prénom], fondatrice de l’agence" loading="lazy">
+          <div class="fondatrice__texte">
+            <h2 id="t-fondatrice">Bonjour, moi c’est [Prénom].</h2>
+            <p>J’ai travaillé [X] ans dans une agence du secteur avant d’ouvrir la mienne. Ce que j’ai retenu : les gens veulent surtout quelqu’un qui répond au téléphone, qui dit la vérité sur les prix et qui les tient au courant.</p>
+            <p>C’est exactement ce qu’on fait ici. Je suis votre seule interlocutrice, de la première visite jusqu’au notaire.</p>
+            <p class="signature" aria-hidden="true">[Prénom]</p>
+            <a class="lien-fleche" href="agence.html">Découvrir l’agence</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="t-vendus">
+      <div class="conteneur vendus">
+        <div class="vendus__texte" data-reveler>
+          <h2 id="t-vendus">Récemment vendus et loués</h2>
+          <p>Les biens partent vite quand ils sont au bon prix. Le T4 de Saint-Martin a trouvé acheteur en cinq semaines.</p>
+          <a class="lien-fleche" href="vendre.html#estimation">Estimer le mien</a>
+        </div>
+        <div class="vendus__liste" data-biens-grille data-statut="vendu" data-nombre="2"></div>
+      </div>
+    </section>
+
+    <section class="section section--gris" aria-labelledby="t-acces">
+      <div class="conteneur acces">
+        <div class="acces__carte" data-reveler>
+          <!-- Plan OpenStreetMap : remplacer bbox et marker par les coordonnées de l'agence -->
+          <iframe title="Plan d’accès à l’agence" loading="lazy"
+                  src="https://www.openstreetmap.org/export/embed.html?bbox=0.6810%2C47.3890%2C0.6990%2C47.3980&amp;layer=mapnik&amp;marker=47.3936%2C0.6892"></iframe>
+        </div>
+        <div class="acces__infos" data-reveler>
+          <h2 id="t-acces">Venir à l’agence</h2>
+          <address>[Adresse]<br>[Code postal] [Votre ville]</address>
+          <p class="acces__repere">En face de la boulangerie, parking gratuit place [de la Mairie].</p>
+          <dl class="horaires">
+            <div><dt>Mardi – vendredi</dt><dd>[horaires]</dd></div>
+            <div><dt>Samedi</dt><dd>[horaires]</dd></div>
+            <div><dt>Lundi</dt><dd>Sur rendez-vous</dd></div>
+          </dl>
+          <div class="acces__actions">
+            <a class="bouton bouton--plein" href="tel:[Téléphone]">Appeler</a>
+            <a class="bouton bouton--clair" href="contact.html">Écrire</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="conteneur site-footer__haut">
+      <div class="site-footer__agence">
+        <p class="logo logo--pied"><span class="logo__marque" aria-hidden="true"></span><span class="logo__nom">[Nom de l'agence]</span></p>
+        <p>Agence immobilière indépendante à [Votre ville]. Vente, location et gestion locative.</p>
+        <p class="site-footer__contact">
+          <a href="tel:[Téléphone]">[Téléphone]</a>
+          <a href="mailto:[e-mail]">[e-mail]</a>
+        </p>
+      </div>
+      <nav class="site-footer__nav" aria-label="Plan du site">
+        <div>
+          <p class="site-footer__titre">Biens</p>
+          <ul>
+            <li><a href="biens.html">Acheter</a></li>
+            <li><a href="biens.html?transaction=location">Louer</a></li>
+            <li><a href="biens.html?type=Maison">Maisons</a></li>
+            <li><a href="biens.html?type=Appartement">Appartements</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="site-footer__titre">Propriétaires</p>
+          <ul>
+            <li><a href="vendre.html#estimation">Estimation gratuite</a></li>
+            <li><a href="vendre.html">Vendre</a></li>
+            <li><a href="location-gestion.html">Gestion locative</a></li>
+            <li><a href="honoraires.html">Honoraires</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="site-footer__titre">L’agence</p>
+          <ul>
+            <li><a href="agence.html">Qui sommes-nous</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li>[Adresse]<br>[Code postal] [Votre ville]</li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+    <div class="conteneur site-footer__bas">
+      <p>© <span data-annee>2026</span> [Nom de l'agence] · Carte professionnelle n° [n° carte pro], CCI de [ville] · Garantie financière : [organisme]</p>
+      <p>
+        <a href="mentions-legales.html">Mentions légales</a>
+        <a href="confidentialite.html">Confidentialité</a>
+        <a href="honoraires.html">Barème des honoraires</a>
+        <a class="lien-discret" href="../admin/connexion.html">Espace agence</a>
+      </p>
+    </div>
+  </footer>
+
+  <a class="appel-mobile" href="tel:[Téléphone]"><span class="appel-mobile__icone" aria-hidden="true"></span>Appeler</a>
+
+  <script src="../shared/data.js" defer></script>
+  <script src="../shared/store.js" defer></script>
+  <script src="../shared/ui.js" defer></script>
+  <script src="../shared/biens.js" defer></script>
+  <script src="js/main.js" defer></script>
+</body>
+</html>

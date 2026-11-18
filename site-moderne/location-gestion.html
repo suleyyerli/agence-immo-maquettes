@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Gestion locative et mise en location à [Votre ville] | [Nom de l'agence]</title>
+  <meta name="description" content="Confiez la location ou la gestion de votre appartement ou de votre maison : locataire vérifié, loyers encaissés, relevé mensuel. 6 % des loyers.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="fr_FR">
+  <meta property="og:site_name" content="[Nom de l'agence]">
+  <meta property="og:title" content="Gestion locative et mise en location à [Votre ville] | [Nom de l'agence]">
+  <meta property="og:description" content="Confiez la location ou la gestion de votre appartement ou de votre maison : locataire vérifié, loyers encaissés, relevé mensuel. 6 % des loyers.">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&q=75&w=1200&h=630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="theme-color" content="#FFFFFF">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://images.unsplash.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Caveat:wght@500&display=swap">
+  <link rel="stylesheet" href="css/style.css">
+  <script>document.documentElement.classList.add('js');</script>
+</head>
+<body class="page-location">
+  <a class="lien-evitement" href="#contenu">Aller au contenu</a>
+
+  <header class="site-header" data-header>
+    <div class="conteneur site-header__inner">
+      <a class="logo" href="index.html" aria-label="[Nom de l'agence], retour à l’accueil">
+        <span class="logo__marque" aria-hidden="true"></span>
+        <span class="logo__nom">[Nom de l'agence]</span>
+      </a>
+
+      <nav class="nav" id="menu-principal" aria-label="Navigation principale">
+        <ul class="nav__liste">
+          <li><a href="biens.html">Acheter</a></li>
+          <li><a href="biens.html?transaction=location">Louer</a></li>
+          <li><a href="vendre.html">Vendre</a></li>
+          <li><a href="location-gestion.html" aria-current="page">Gestion locative</a></li>
+          <li><a href="agence.html">L’agence</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="nav__mobile-pied">
+          <a class="bouton bouton--plein" href="vendre.html#estimation">Estimer mon bien gratuitement</a>
+          <a class="bouton bouton--clair" href="tel:[Téléphone]">Appeler l’agence</a>
+          <p>[Adresse], [Votre ville] · [horaires]</p>
+        </div>
+      </nav>
+
+      <div class="site-header__actions">
+        <a class="site-header__tel" href="tel:[Téléphone]">[Téléphone]</a>
+        <a class="bouton bouton--plein bouton--petit" href="vendre.html#estimation">Estimer mon bien</a>
+      </div>
+      <button class="burger" type="button" data-menu-bouton aria-controls="menu-principal" aria-expanded="false" aria-label="Ouvrir le menu">
+        <span class="burger__trait"></span><span class="burger__trait"></span><span class="burger__trait"></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="contenu">
+    <section class="intro conteneur">
+      <h1 class="intro__titre">Louer votre bien sans les tracas</h1>
+      <p class="intro__chapo">Trouver le bon locataire, encaisser les loyers, gérer la fuite d’eau du dimanche soir : vous choisissez ce que vous nous confiez.</p>
+    </section>
+
+    <section class="section section--court" aria-labelledby="t-comparatif">
+      <div class="conteneur">
+        <h2 id="t-comparatif" class="sr-only">Comparer les deux formules</h2>
+        <div class="comparatif" data-reveler>
+          <table class="comparatif__table">
+            <thead>
+              <tr>
+                <th scope="col"><span class="sr-only">Prestation</span></th>
+                <th scope="col">Mise en location<span>8 € + 3 € par m²</span></th>
+                <th scope="col" class="comparatif__vedette">Gestion complète<span>6 % des loyers</span></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><th scope="row">Conseil sur le loyer avec les références du quartier</th><td class="oui">Inclus</td><td class="oui">Inclus</td></tr>
+              <tr><th scope="row">Photos, annonce et diffusion</th><td class="oui">Inclus</td><td class="oui">Inclus</td></tr>
+              <tr><th scope="row">Visites et sélection des dossiers</th><td class="oui">Inclus</td><td class="oui">Inclus</td></tr>
+              <tr><th scope="row">Bail et état des lieux d’entrée</th><td class="oui">Inclus</td><td class="oui">Inclus</td></tr>
+              <tr><th scope="row">Encaissement des loyers et quittances</th><td class="non">Non</td><td class="oui">Inclus</td></tr>
+              <tr><th scope="row">Relances et suivi des impayés</th><td class="non">Non</td><td class="oui">Inclus</td></tr>
+              <tr><th scope="row">Révision du loyer et régularisation des charges</th><td class="non">Non</td><td class="oui">Inclus</td></tr>
+              <tr><th scope="row">Petits travaux avec des artisans du secteur</th><td class="non">Non</td><td class="oui">Inclus</td></tr>
+              <tr><th scope="row">Aide à la déclaration des revenus fonciers</th><td class="non">Non</td><td class="oui">Inclus</td></tr>
+              <tr><th scope="row">Garantie des loyers impayés</th><td class="non">Non</td><td class="option">+ 2,5 %</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--gris" aria-labelledby="t-calcul">
+      <div class="conteneur calcul">
+        <div class="calcul__texte" data-reveler>
+          <h2 id="t-calcul">Un exemple chiffré</h2>
+          <p>Un T2 de 46 m², loué 690 € par mois en face du parc des Sources.</p>
+          <a class="lien-fleche" href="honoraires.html">Tous nos honoraires</a>
+        </div>
+        <dl class="calcul__lignes" data-reveler>
+          <div><dt>Recherche du locataire et bail</dt><dd>368 €</dd></div>
+          <div><dt>État des lieux d’entrée</dt><dd>138 €</dd></div>
+          <div><dt>Gestion complète, par mois</dt><dd>41,40 €</dd></div>
+          <div><dt>Garantie loyers impayés, par mois</dt><dd>17,25 €</dd></div>
+          <div class="calcul__total"><dt>Vous recevez chaque mois</dt><dd>631,35 €</dd></div>
+        </dl>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="t-proprietaires">
+      <div class="conteneur citation-bloc" data-reveler>
+        <h2 id="t-proprietaires" class="sr-only">Le mot de [Prénom]</h2>
+        <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=75&w=300&h=300" alt="" class="citation-bloc__photo" loading="lazy">
+        <blockquote>
+          <p>« Les propriétaires qui me confient leur bien l’ont souvent géré seuls pendant des années. Ce qu’ils veulent, c’est arrêter de s’en soucier, tout en sachant exactement ce qui se passe. »</p>
+          <footer>[Prénom], fondatrice de l’agence</footer>
+        </blockquote>
+        <a class="bouton bouton--plein" href="contact.html?sujet=Gestion%20locative">Parler de mon bien</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="conteneur site-footer__haut">
+      <div class="site-footer__agence">
+        <p class="logo logo--pied"><span class="logo__marque" aria-hidden="true"></span><span class="logo__nom">[Nom de l'agence]</span></p>
+        <p>Agence immobilière indépendante à [Votre ville]. Vente, location et gestion locative.</p>
+        <p class="site-footer__contact">
+          <a href="tel:[Téléphone]">[Téléphone]</a>
+          <a href="mailto:[e-mail]">[e-mail]</a>
+        </p>
+      </div>
+      <nav class="site-footer__nav" aria-label="Plan du site">
+        <div>
+          <p class="site-footer__titre">Biens</p>
+          <ul>
+            <li><a href="biens.html">Acheter</a></li>
+            <li><a href="biens.html?transaction=location">Louer</a></li>
+            <li><a href="biens.html?type=Maison">Maisons</a></li>
+            <li><a href="biens.html?type=Appartement">Appartements</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="site-footer__titre">Propriétaires</p>
+          <ul>
+            <li><a href="vendre.html#estimation">Estimation gratuite</a></li>
+            <li><a href="vendre.html">Vendre</a></li>
+            <li><a href="location-gestion.html">Gestion locative</a></li>
+            <li><a href="honoraires.html">Honoraires</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="site-footer__titre">L’agence</p>
+          <ul>
+            <li><a href="agence.html">Qui sommes-nous</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li>[Adresse]<br>[Code postal] [Votre ville]</li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+    <div class="conteneur site-footer__bas">
+      <p>© <span data-annee>2026</span> [Nom de l'agence] · Carte professionnelle n° [n° carte pro], CCI de [ville] · Garantie financière : [organisme]</p>
+      <p>
+        <a href="mentions-legales.html">Mentions légales</a>
+        <a href="confidentialite.html">Confidentialité</a>
+        <a href="honoraires.html">Barème des honoraires</a>
+        <a class="lien-discret" href="../admin/connexion.html">Espace agence</a>
+      </p>
+    </div>
+  </footer>
+
+  <a class="appel-mobile" href="tel:[Téléphone]"><span class="appel-mobile__icone" aria-hidden="true"></span>Appeler</a>
+
+  <script src="../shared/data.js" defer></script>
+  <script src="../shared/store.js" defer></script>
+  <script src="../shared/ui.js" defer></script>
+  <script src="../shared/biens.js" defer></script>
+  <script src="js/main.js" defer></script>
+</body>
+</html>

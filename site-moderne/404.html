@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Page introuvable | [Nom de l'agence]</title>
+  <meta name="description" content="Cette page n’existe pas ou n’existe plus.">
+  <meta name="robots" content="noindex, nofollow">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="fr_FR">
+  <meta property="og:site_name" content="[Nom de l'agence]">
+  <meta property="og:title" content="Page introuvable | [Nom de l'agence]">
+  <meta property="og:description" content="Cette page n’existe pas ou n’existe plus.">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&q=75&w=1200&h=630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="theme-color" content="#FFFFFF">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://images.unsplash.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Caveat:wght@500&display=swap">
+  <link rel="stylesheet" href="css/style.css">
+  <script>document.documentElement.classList.add('js');</script>
+</head>
+<body class="page-erreur">
+  <a class="lien-evitement" href="#contenu">Aller au contenu</a>
+
+  <header class="site-header" data-header>
+    <div class="conteneur site-header__inner">
+      <a class="logo" href="index.html" aria-label="[Nom de l'agence], retour à l’accueil">
+        <span class="logo__marque" aria-hidden="true"></span>
+        <span class="logo__nom">[Nom de l'agence]</span>
+      </a>
+
+      <nav class="nav" id="menu-principal" aria-label="Navigation principale">
+        <ul class="nav__liste">
+          <li><a href="biens.html">Acheter</a></li>
+          <li><a href="biens.html?transaction=location">Louer</a></li>
+          <li><a href="vendre.html">Vendre</a></li>
+          <li><a href="location-gestion.html">Gestion locative</a></li>
+          <li><a href="agence.html">L’agence</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="nav__mobile-pied">
+          <a class="bouton bouton--plein" href="vendre.html#estimation">Estimer mon bien gratuitement</a>
+          <a class="bouton bouton--clair" href="tel:[Téléphone]">Appeler l’agence</a>
+          <p>[Adresse], [Votre ville] · [horaires]</p>
+        </div>
+      </nav>
+
+      <div class="site-header__actions">
+        <a class="site-header__tel" href="tel:[Téléphone]">[Téléphone]</a>
+        <a class="bouton bouton--plein bouton--petit" href="vendre.html#estimation">Estimer mon bien</a>
+      </div>
+      <button class="burger" type="button" data-menu-bouton aria-controls="menu-principal" aria-expanded="false" aria-label="Ouvrir le menu">
+        <span class="burger__trait"></span><span class="burger__trait"></span><span class="burger__trait"></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="contenu">
+    <section class="erreur conteneur">
+      <p class="erreur__code" aria-hidden="true">404</p>
+      <h1 class="erreur__titre">Oups, cette page est introuvable.</h1>
+      <p class="erreur__texte">Le lien est peut-être ancien, ou le bien a déjà trouvé preneur. Lancez une nouvelle recherche :</p>
+      <form class="recherche recherche--compacte" action="biens.html" method="get" data-recherche role="search" aria-label="Rechercher un bien">
+        <fieldset class="recherche__projet">
+          <legend class="sr-only">Votre projet</legend>
+          <label><input type="radio" name="transaction" value="vente" checked><span>Acheter</span></label>
+          <label><input type="radio" name="transaction" value="location"><span>Louer</span></label>
+        </fieldset>
+        <div class="recherche__champs">
+          <div class="recherche__champ">
+            <label for="r-type">Quel bien ?</label>
+            <select id="r-type" name="type"><option value="">Tous les types</option></select>
+          </div>
+          <div class="recherche__champ">
+            <label for="r-budget">Budget</label>
+            <select id="r-budget" name="budget"><option value="">Budget max</option></select>
+          </div>
+          <button class="bouton bouton--plein recherche__bouton" type="submit">Rechercher</button>
+        </div>
+      </form>
+      <p><a class="lien-fleche" href="index.html">Retour à l’accueil</a></p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="conteneur site-footer__haut">
+      <div class="site-footer__agence">
+        <p class="logo logo--pied"><span class="logo__marque" aria-hidden="true"></span><span class="logo__nom">[Nom de l'agence]</span></p>
+        <p>Agence immobilière indépendante à [Votre ville]. Vente, location et gestion locative.</p>
+        <p class="site-footer__contact">
+          <a href="tel:[Téléphone]">[Téléphone]</a>
+          <a href="mailto:[e-mail]">[e-mail]</a>
+        </p>
+      </div>
+      <nav class="site-footer__nav" aria-label="Plan du site">
+        <div>
+          <p class="site-footer__titre">Biens</p>
+          <ul>
+            <li><a href="biens.html">Acheter</a></li>
+            <li><a href="biens.html?transaction=location">Louer</a></li>
+            <li><a href="biens.html?type=Maison">Maisons</a></li>
+            <li><a href="biens.html?type=Appartement">Appartements</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="site-footer__titre">Propriétaires</p>
+          <ul>
+            <li><a href="vendre.html#estimation">Estimation gratuite</a></li>
+            <li><a href="vendre.html">Vendre</a></li>
+            <li><a href="location-gestion.html">Gestion locative</a></li>
+            <li><a href="honoraires.html">Honoraires</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="site-footer__titre">L’agence</p>
+          <ul>
+            <li><a href="agence.html">Qui sommes-nous</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li>[Adresse]<br>[Code postal] [Votre ville]</li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+    <div class="conteneur site-footer__bas">
+      <p>© <span data-annee>2026</span> [Nom de l'agence] · Carte professionnelle n° [n° carte pro], CCI de [ville] · Garantie financière : [organisme]</p>
+      <p>
+        <a href="mentions-legales.html">Mentions légales</a>
+        <a href="confidentialite.html">Confidentialité</a>
+        <a href="honoraires.html">Barème des honoraires</a>
+        <a class="lien-discret" href="../admin/connexion.html">Espace agence</a>
+      </p>
+    </div>
+  </footer>
+
+  <a class="appel-mobile" href="tel:[Téléphone]"><span class="appel-mobile__icone" aria-hidden="true"></span>Appeler</a>
+
+  <script src="../shared/data.js" defer></script>
+  <script src="../shared/store.js" defer></script>
+  <script src="../shared/ui.js" defer></script>
+  <script src="../shared/biens.js" defer></script>
+  <script src="js/main.js" defer></script>
+</body>
+</html>
