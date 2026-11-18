@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Paramètres · Espace agence</title>
+  <meta name="description" content="Informations de l’agence et barème des honoraires.">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="theme-color" content="#ffffff">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
+  <link rel="stylesheet" href="css/admin.css">
+</head>
+<body class="page-parametres">
+  <a class="lien-evitement" href="#contenu">Aller au contenu</a>
+
+  <svg class="sprite" aria-hidden="true" focusable="false">
+    <symbol id="i-accueil" viewBox="0 0 24 24"><path d="M3 10.5 12 3l9 7.5V20a1 1 0 0 1-1 1h-5v-6h-6v6H4a1 1 0 0 1-1-1z"/></symbol>
+    <symbol id="i-biens" viewBox="0 0 24 24"><path d="M4 21V9l8-5 8 5v12M9 21v-7h6v7M2 21h20"/></symbol>
+    <symbol id="i-demandes" viewBox="0 0 24 24"><path d="M4 5h16v11H8l-4 4zM8 9h8M8 12h5"/></symbol>
+    <symbol id="i-reglages" viewBox="0 0 24 24"><path d="M4 7h10M18 7h2M4 17h4M12 17h8"/><circle cx="16" cy="7" r="2"/><circle cx="10" cy="17" r="2"/></symbol>
+    <symbol id="i-plus" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></symbol>
+    <symbol id="i-oeil" viewBox="0 0 24 24"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/></symbol>
+    <symbol id="i-oeil-barre" viewBox="0 0 24 24"><path d="M3 3l18 18M10.6 5.1A10.6 10.6 0 0 1 12 5c6.5 0 10 7 10 7a17.7 17.7 0 0 1-3.2 4.2M6.6 6.6C3.8 8.4 2 12 2 12s3.5 7 10 7c1.8 0 3.4-.5 4.8-1.3M9.9 9.9a3 3 0 0 0 4.2 4.2"/></symbol>
+    <symbol id="i-copier" viewBox="0 0 24 24"><rect x="8" y="8" width="12" height="12" rx="2"/><path d="M16 8V5a1 1 0 0 0-1-1H5a1 1 0 0 0-1 1v10a1 1 0 0 0 1 1h3"/></symbol>
+    <symbol id="i-poubelle" viewBox="0 0 24 24"><path d="M4 7h16M10 11v6M14 11v6M6 7l1 13h10l1-13M9 7V4h6v3"/></symbol>
+    <symbol id="i-crayon" viewBox="0 0 24 24"><path d="M4 20h4L19 9l-4-4L4 16zM13.5 6.5l4 4"/></symbol>
+    <symbol id="i-tel" viewBox="0 0 24 24"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></symbol>
+    <symbol id="i-mail" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></symbol>
+    <symbol id="i-externe" viewBox="0 0 24 24"><path d="M14 4h6v6M20 4l-9 9M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5"/></symbol>
+    <symbol id="i-retour" viewBox="0 0 24 24"><path d="M15 5l-7 7 7 7"/></symbol>
+    <symbol id="i-photo" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="9" cy="10" r="2"/><path d="m21 16-5-5-9 8"/></symbol>
+    <symbol id="i-etoile" viewBox="0 0 24 24"><path d="m12 3 2.8 5.7 6.2.9-4.5 4.4 1 6.2L12 17.3 6.5 20.2l1-6.2L3 9.6l6.2-.9z"/></symbol>
+    <symbol id="i-gauche" viewBox="0 0 24 24"><path d="M15 6l-6 6 6 6"/></symbol>
+    <symbol id="i-droite" viewBox="0 0 24 24"><path d="M9 6l6 6-6 6"/></symbol>
+    <symbol id="i-sortie" viewBox="0 0 24 24"><path d="M15 4h4a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1h-4M10 16l-4-4 4-4M6 12h10"/></symbol>
+    <symbol id="i-recharger" viewBox="0 0 24 24"><path d="M20 11a8 8 0 1 0-2.3 5.7M20 5v6h-6"/></symbol>
+  </svg>
+
+  <div class="bandeau-demo" role="note">
+    <p><strong>Démo</strong> — les données ne sont enregistrées que sur cet appareil.</p>
+    <button class="bandeau-demo__bouton" type="button" data-reinitialiser>Réinitialiser la démo</button>
+  </div>
+
+  <div class="app">
+    <aside class="barre" aria-label="Espace agence">
+      <a class="barre__logo" href="index.html">
+        <span class="marque" aria-hidden="true"></span>
+        <span><span class="barre__nom">[Nom de l'agence]</span><span class="barre__sous-titre">Espace agence</span></span>
+      </a>
+      <a class="bouton bouton--accent barre__ajout" href="bien-edition.html"><svg class="ico"><use href="#i-plus"/></svg>Ajouter un bien</a>
+      <nav aria-label="Menu principal">
+        <ul class="barre__menu">
+          <li><a href="index.html"><svg class="ico"><use href="#i-accueil"/></svg>Tableau de bord</a></li>
+          <li><a href="biens.html"><svg class="ico"><use href="#i-biens"/></svg>Mes biens<span class="compteur" data-compte-biens></span></a></li>
+          <li><a href="demandes.html"><svg class="ico"><use href="#i-demandes"/></svg>Demandes<span class="compteur compteur--alerte" data-compte-nouvelles></span></a></li>
+          <li><a href="parametres.html" aria-current="page"><svg class="ico"><use href="#i-reglages"/></svg>Paramètres</a></li>
+        </ul>
+      </nav>
+      <div class="barre__pied">
+        <button class="barre__lien" type="button" data-voir-site><svg class="ico"><use href="#i-externe"/></svg>Voir le site</button>
+        <a class="barre__lien" href="connexion.html"><svg class="ico"><use href="#i-sortie"/></svg>Se déconnecter</a>
+      </div>
+    </aside>
+
+    <div class="app__contenu">
+      <header class="entete-mobile">
+        <a class="barre__logo" href="index.html"><span class="marque" aria-hidden="true"></span><span class="barre__nom">[Nom de l'agence]</span></a>
+        <button class="bouton bouton--discret bouton--petit" type="button" data-voir-site><svg class="ico"><use href="#i-externe"/></svg>Voir le site</button>
+      </header>
+      <main id="contenu" class="page">
+        <form class="parametres" data-parametres novalidate>
+          <header class="page__entete">
+            <div>
+              <h1 class="page__titre">Paramètres</h1>
+              <p class="page__resume">Les informations de l’agence et votre barème d’honoraires.</p>
+            </div>
+            <div class="page__actions">
+              <button class="bouton bouton--accent" type="submit">Enregistrer</button>
+            </div>
+          </header>
+
+          <div class="parametres__grille">
+            <section class="carte" aria-labelledby="t-agence">
+              <h2 class="carte__titre" id="t-agence">L’agence</h2>
+              <div class="champs">
+                <div class="champ"><label for="p-nom">Nom de l’agence</label><input id="p-nom" name="nom" type="text"></div>
+                <div class="champ"><label for="p-prenom">Votre prénom</label><input id="p-prenom" name="prenom" type="text"></div>
+                <div class="champ champ--large"><label for="p-adresse">Adresse</label><input id="p-adresse" name="adresse" type="text"></div>
+                <div class="champ"><label for="p-ville">Ville</label><input id="p-ville" name="ville" type="text"></div>
+                <div class="champ"><label for="p-tel">Téléphone</label><input id="p-tel" name="telephone" type="tel"></div>
+                <div class="champ"><label for="p-email">E-mail</label><input id="p-email" name="email" type="email"></div>
+                <div class="champ"><label for="p-carte">N° de carte professionnelle</label><input id="p-carte" name="cartePro" type="text"></div>
+                <div class="champ champ--large"><label for="p-horaires">Horaires</label><textarea id="p-horaires" name="horaires" rows="2" placeholder="Du mardi au vendredi 9 h – 12 h 30 et 14 h – 19 h, le samedi 9 h – 12 h 30"></textarea></div>
+              </div>
+            </section>
+
+            <div class="pile">
+              <section class="carte" aria-labelledby="t-logo">
+                <h2 class="carte__titre" id="t-logo">Logo</h2>
+                <div class="logo-zone">
+                  <div class="logo-zone__apercu" data-logo-apercu><span>Pas encore de logo</span></div>
+                  <div>
+                    <label class="bouton bouton--discret" for="p-logo">Choisir une image</label>
+                    <input class="sr-only" id="p-logo" type="file" accept="image/*" data-logo-champ>
+                    <button class="lien" type="button" data-logo-retirer hidden>Retirer</button>
+                    <p class="champ__aide">PNG ou SVG, fond transparent de préférence.</p>
+                  </div>
+                </div>
+              </section>
+
+              <section class="carte" aria-labelledby="t-reseaux">
+                <h2 class="carte__titre" id="t-reseaux">Réseaux sociaux</h2>
+                <div class="champ"><label for="p-fb">Facebook</label><input id="p-fb" name="facebook" type="url" placeholder="https://facebook.com/…"></div>
+                <div class="champ"><label for="p-ig">Instagram</label><input id="p-ig" name="instagram" type="url" placeholder="https://instagram.com/…"></div>
+                <div class="champ"><label for="p-li">LinkedIn</label><input id="p-li" name="linkedin" type="url" placeholder="https://linkedin.com/in/…"></div>
+              </section>
+            </div>
+
+            <section class="carte carte--large" aria-labelledby="t-bareme">
+              <div class="carte__entete">
+                <h2 class="carte__titre" id="t-bareme">Barème des honoraires</h2>
+                <span class="carte__note">S’affiche sur la page « Honoraires » des trois sites</span>
+              </div>
+              <h3 class="sous-titre">Vente</h3>
+              <div class="bareme" data-bareme="honorairesVente"></div>
+              <button class="lien" type="button" data-ajout-ligne="honorairesVente">+ Ajouter une tranche</button>
+              <h3 class="sous-titre">Location et gestion</h3>
+              <div class="bareme" data-bareme="honorairesLocation"></div>
+              <button class="lien" type="button" data-ajout-ligne="honorairesLocation">+ Ajouter une ligne</button>
+            </section>
+
+            <section class="carte carte--large carte--neutre" aria-labelledby="t-demo">
+              <h2 class="carte__titre" id="t-demo">Démonstration</h2>
+              <p>Tout ce que vous faites ici est enregistré dans ce navigateur uniquement. Pour repartir des exemples du début (12 biens, 8 demandes), réinitialisez la démo.</p>
+              <button class="bouton bouton--discret" type="button" data-reinitialiser><svg class="ico"><use href="#i-recharger"/></svg>Réinitialiser la démo</button>
+            </section>
+          </div>
+        </form>
+      </main>
+    </div>
+  </div>
+
+  <nav class="nav-bas" aria-label="Menu">
+    <a href="index.html"><svg class="ico"><use href="#i-accueil"/></svg>Accueil</a>
+    <a href="biens.html"><svg class="ico"><use href="#i-biens"/></svg>Biens</a>
+    <a class="nav-bas__ajout" href="bien-edition.html" aria-label="Ajouter un bien"><svg class="ico"><use href="#i-plus"/></svg></a>
+    <a href="demandes.html"><svg class="ico"><use href="#i-demandes"/></svg>Demandes<span class="compteur compteur--alerte" data-compte-nouvelles></span></a>
+    <a href="parametres.html" aria-current="page"><svg class="ico"><use href="#i-reglages"/></svg>Réglages</a>
+  </nav>
+
+  <div class="toasts" aria-live="polite" aria-atomic="false"></div>
+
+  <dialog class="modale" id="modale-confirmation" aria-labelledby="modale-confirmation-titre">
+    <form method="dialog" class="modale__corps">
+      <h2 class="modale__titre" id="modale-confirmation-titre">Confirmer</h2>
+      <p class="modale__texte" data-modale-texte></p>
+      <div class="modale__actions">
+        <button class="bouton bouton--discret" value="non">Annuler</button>
+        <button class="bouton bouton--danger" value="oui" data-modale-ok>Confirmer</button>
+      </div>
+    </form>
+  </dialog>
+
+  <dialog class="modale" id="modale-site" aria-labelledby="modale-site-titre">
+    <div class="modale__corps">
+      <h2 class="modale__titre" id="modale-site-titre">Voir sur le site</h2>
+      <p class="modale__texte">Quel style voulez-vous ouvrir ? Les trois affichent les mêmes biens.</p>
+      <div class="choix-site">
+        <button type="button" class="choix-site__option" data-style="classique"><span class="choix-site__apercu choix-site__apercu--classique" aria-hidden="true">Aa</span><span><strong>Classique</strong><small>Crème et doré, élégant</small></span></button>
+        <button type="button" class="choix-site__option" data-style="moderne"><span class="choix-site__apercu choix-site__apercu--moderne" aria-hidden="true">Aa</span><span><strong>Moderne</strong><small>Blanc et vert, épuré</small></span></button>
+        <button type="button" class="choix-site__option" data-style="urbain"><span class="choix-site__apercu choix-site__apercu--urbain" aria-hidden="true">AA</span><span><strong>Urbain</strong><small>Sombre et orange, audacieux</small></span></button>
+      </div>
+      <div class="modale__actions">
+        <button type="button" class="bouton bouton--discret" data-fermer-modale>Fermer</button>
+      </div>
+    </div>
+  </dialog>
+
+  <script src="../shared/data.js" defer></script>
+  <script src="../shared/store.js" defer></script>
+  <script src="../shared/biens.js" defer></script>
+  <script src="js/admin.js" defer></script>
+  <script src="js/pages/parametres.js" defer></script>
+</body>
+</html>

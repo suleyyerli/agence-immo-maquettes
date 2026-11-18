@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Connexion · Espace agence</title>
+  <meta name="description" content="Connexion à l’espace agence.">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="theme-color" content="#ffffff">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
+  <link rel="stylesheet" href="css/admin.css">
+</head>
+<body class="page-connexion">
+  <div class="bandeau-demo" role="note">
+    <p><strong>Démo</strong> — les données ne sont enregistrées que sur cet appareil.</p>
+  </div>
+  <main id="contenu">
+    <div class="connexion">
+      <div class="connexion__visuel" aria-hidden="true">
+        <img src="https://images.unsplash.com/photo-1600210491892-03d54c0aaf87?auto=format&fit=crop&q=75&w=1400" alt="">
+        <p class="connexion__citation">Ajoutez un bien depuis votre téléphone pendant la visite : il est en ligne avant votre retour à l’agence.</p>
+      </div>
+
+      <div class="connexion__panneau">
+        <div class="connexion__carte">
+          <p class="barre__logo"><span class="marque" aria-hidden="true"></span><span><span class="barre__nom">[Nom de l'agence]</span><span class="barre__sous-titre">Espace agence</span></span></p>
+          <h1 class="connexion__titre">Votre espace agence</h1>
+          <p class="connexion__intro">Connectez-vous pour gérer vos biens et vos demandes.</p>
+
+          <form class="formulaire" action="index.html" data-connexion>
+            <div class="champ">
+              <label for="email">E-mail</label>
+              <input id="email" name="email" type="email" autocomplete="username" placeholder="[e-mail]" required>
+            </div>
+            <div class="champ">
+              <div class="champ__ligne">
+                <label for="mdp">Mot de passe</label>
+                <button class="lien" type="button" data-mdp-oublie>Mot de passe oublié ?</button>
+              </div>
+              <div class="champ__mdp">
+                <input id="mdp" name="mdp" type="password" autocomplete="current-password" required>
+                <button class="champ__afficher" type="button" data-afficher-mdp aria-pressed="false">Afficher</button>
+              </div>
+            </div>
+            <p class="message message--info" data-message-oubli hidden>Dans la version finale, vous recevrez un lien par e-mail pour choisir un nouveau mot de passe. Pour la démo, tapez ce que vous voulez.</p>
+            <label class="case"><input type="checkbox" name="rester" checked> Rester connectée sur cet appareil</label>
+            <button class="bouton bouton--accent bouton--large" type="submit">Se connecter</button>
+          </form>
+          <p class="connexion__note">Démo : n’importe quel e-mail et mot de passe fonctionnent.</p>
+        </div>
+        <p class="connexion__retour"><a href="../index.html">← Retour aux maquettes</a></p>
+      </div>
+    </div>
+  </main>
+  <script src="js/pages/connexion.js" defer></script>
+</body>
+</html>
